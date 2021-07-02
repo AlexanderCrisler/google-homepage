@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .flexbox-container {
+        display: flex;
+    }
+
+    .flex-center {
+        margin: 0 auto;
+        width: 544px;
+    }
+
+    .div-center {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .rounded-corners {
+        border-radius: 15px;
+        border: 1px #000 solid;
+    }
+
+    .google {
+        width: 272px;
+        height: 92px;
+    }
+
+    .search {
+        width: 544px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .buttons {
+        width: 200px;
+        margin: 10px;
+    }
+
+    .flex-items {
+        margin: 5px 5px 5px 5px;
+    }
+
+    .flex-div {
+        align-items: stretch;
+    }
+
+    .top-right {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .bottom-left {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .bottom-center {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bottom-right {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+</style>
+
+<head>
+    <title>Google</title>
+</head>
+
+<body>
+    <nav class="flexbox-container">
+        <p class="flex-items">About</p>
+        <p class="flex-items">Store</p>
+        <div class="flex-itmes flexbox-container top-right">
+            <p class="flex-items">Gmail</p>
+            <p class="flex-items">Images</p>
+            <p class="flex-items">[menu]</p>
+            <p class="flex-items">[profile]</p>
+        </div>
+    </nav>
+
+    <main class="flex-center">
+        <img class="div-center google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google Doodle">
+        <br>
+
+        <input type="text" class="rounded-corners search" />
+
+        <br>
+        <div class="div-center">
+            <button class="buttons">Google Search</button>
+            <button class="buttons">I'm Fealing Lucky</button>
+        </div>
+    </main>
+
+
+    <footer class="flexbox-container">
+        <div class="flexbox-container bottom-left">
+            <p class="flex-items">Advertising</p>
+            <p class="flex-items">Business</p>
+            <p class="flex-items">How Search Works</p>
+        </div>
+        <div class="flexbox-container bottom-center">
+            <p class="flex-items">Carbon Neutral</p>
+        </div>
+        <div class="flexbox-container bottom-right">
+            <p class="flex-items"> Privacy</p>
+            <p class="flex-items">Terms</p>
+            <p class="flex-items">Settings</p>
+        </div>
+    </footer>
+</body>
+
+</html>
