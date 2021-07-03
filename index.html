@@ -33,6 +33,36 @@
         position: static;
     }
 
+    .flex-items {
+        margin: 5px 5px 5px 5px;
+    }
+
+    .flex-div {
+        align-items: stretch;
+    }
+
+    .top-right {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .top-spacer {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        height: 290px;
+    }
+
+    .header-element {
+        display: flex;
+        align-items: center;
+        padding: 5px 0px 0px 5px;
+    }
+
+    .header-element:hover {
+        text-decoration: underline;
+    }
+
     .div-center {
         display: flex;
         justify-content: center;
@@ -89,20 +119,6 @@
         color: #202124;
     }
 
-    .flex-items {
-        margin: 5px 5px 5px 5px;
-    }
-
-    .header-element {
-        display: flex;
-        align-items: center;
-        padding: 5px 0px 0px 5px;
-    }
-
-    .header-element:hover {
-        text-decoration: underline;
-    }
-
     .footer-element {
         display: flex;
         align-items: center;
@@ -112,15 +128,6 @@
     
     .footer-element:hover {
         text-decoration: underline;
-    }
-
-    .flex-div {
-        align-items: stretch;
-    }
-
-    .top-right {
-        justify-content: flex-end;
-        width: 100%;
     }
 
     .bottom-left {
@@ -138,12 +145,7 @@
         justify-content: flex-end;
     }
 
-    .top-spacer {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        height: 290px;
-    }
+    /* Images */
 
     .leaf {
         height: 14px;
@@ -164,17 +166,6 @@
         position: relative;
         top: 6px;
     }
-
-    input {
-        width: 500px;
-        margin: 0 auto;
-        border: none;
-    }
-
-    input:focus {
-        outline: none;
-    }
-
 </style>
 
 <head>
