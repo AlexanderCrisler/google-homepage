@@ -5,12 +5,22 @@
     body {
         font-size: 14px;
         font-family: Arial, sans-serif;
+        color: #222;
     }
 
     footer {
         position: fixed;
         bottom: 0;
+        left: 0;
         width: 100%;
+        background-color: #f2f2f2;
+        height: 47px;
+    }
+
+    nav {
+        /* padding: 6px; */
+        padding-left: 6px;
+        height: 60px;
     }
 
     .flexbox-container {
@@ -19,7 +29,8 @@
 
     .flex-center {
         margin: 0 auto;
-        width: 544px;
+        width: 584px;
+        position: static;
     }
 
     .div-center {
@@ -39,18 +50,68 @@
     }
 
     .search {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        z-index: 3;
+        height: 44px;
+        margin: 0 auto;
+        width: auto;
         width: 544px;
         padding-left: 2%;
         padding-right: 2%;
     }
 
     .buttons {
-        width: 200px;
-        margin: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .buttons:hover {
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
     }
 
     .flex-items {
         margin: 5px 5px 5px 5px;
+    }
+
+    .header-element {
+        display: flex;
+        align-items: center;
+        padding: 5px 0px 0px 5px;
+    }
+
+    .header-element:hover {
+        text-decoration: underline;
+    }
+
+    .footer-element {
+        display: flex;
+        align-items: center;
+        color: #70747a;
+        padding: 5px 5px 5px 5px;
+    }
+    
+    .footer-element:hover {
+        text-decoration: underline;
     }
 
     .flex-div {
@@ -77,6 +138,43 @@
         justify-content: flex-end;
     }
 
+    .top-spacer {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        height: 290px;
+    }
+
+    .leaf {
+        height: 14px;
+        margin-right: 6px;
+    }
+
+    .apps {
+        filter: opacity(70%);
+    }
+
+    .profile {
+        border-radius: 50%;
+    }
+
+    .search-icon {
+        filter: opacity(30%);
+        height: 30px;
+        position: relative;
+        top: 6px;
+    }
+
+    input {
+        width: 500px;
+        margin: 0 auto;
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
 </style>
 
 <head>
@@ -85,44 +183,49 @@
 
 <body>
     <nav class="flexbox-container">
-        <p class="flex-items">About</p>
-        <p class="flex-items">Store</p>
+        <p class="flex-items header-element">About</p>
+        <p class="flex-items header-element">Store</p>
         <div class="flex-itmes flexbox-container top-right">
-            <p class="flex-items">Gmail</p>
-            <p class="flex-items">Images</p>
-            <p class="flex-items">[menu]</p>
-            <p class="flex-items">[profile]</p>
+            <p class="flex-items header-element">Gmail</p>
+            <p class="flex-items header-element">Images</p>
+            <p class="flex-items header-element"><img class="apps" src="/assets/outline_apps_black_24dp.png" alt="apps"></p>
+            <p class="flex-items header-element"><img class="profile" src="/assets/profile.png" alt="profile picture"></p>
         </div>
     </nav>
+
+    <div class="top-spacer"></div>
 
     <main class="flex-center">
         <img class="div-center google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
             alt="Google Doodle">
         <br>
 
-        <input type="text" class="rounded-corners search" />
+        <div class="rounded-corners search">
+            <img class="search-icon" src="/assets/outline_search_black_24dp.png" alt="search icon">
+            <input type="text" class="" />
+        </div>
 
         <br>
         <div class="div-center">
             <button class="buttons">Google Search</button>
-            <button class="buttons">I'm Fealing Lucky</button>
+            <button class="buttons">I'm Feeling Lucky</button>
         </div>
     </main>
 
 
     <footer class="flexbox-container">
         <div class="flexbox-container bottom-left">
-            <p class="flex-items">Advertising</p>
-            <p class="flex-items">Business</p>
-            <p class="flex-items">How Search Works</p>
+            <p class="flex-items footer-element">Advertising</p>
+            <p class="flex-items footer-element">Business</p>
+            <p class="flex-items footer-element">How Search Works</p>
         </div>
         <div class="flexbox-container bottom-center">
-            <p class="flex-items">Carbon Neutral</p>
+            <p class="flex-items footer-element"><img class="leaf" src="/assets/carbon_neutral.png" alt="leaf">Carbon neutral since 2007</p>
         </div>
         <div class="flexbox-container bottom-right">
-            <p class="flex-items"> Privacy</p>
-            <p class="flex-items">Terms</p>
-            <p class="flex-items">Settings</p>
+            <p class="flex-items footer-element"> Privacy</p>
+            <p class="flex-items footer-element">Terms</p>
+            <p class="flex-items footer-element">Settings</p>
         </div>
     </footer>
 </body>
