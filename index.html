@@ -18,9 +18,18 @@
     }
 
     nav {
-        /* padding: 6px; */
         padding-left: 6px;
         height: 60px;
+    }
+
+    input {
+        width: 500px;
+        margin: 0 auto;
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
     }
 
     .flexbox-container {
@@ -41,6 +50,16 @@
         align-items: stretch;
     }
 
+    .header-element {
+        display: flex;
+        align-items: center;
+        padding: 5px 0px 0px 5px;
+    }
+
+    .header-element:hover {
+        text-decoration: underline;
+    }
+
     .top-right {
         justify-content: flex-end;
         width: 100%;
@@ -51,16 +70,6 @@
         flex-direction: column;
         flex-shrink: 0;
         height: 290px;
-    }
-
-    .header-element {
-        display: flex;
-        align-items: center;
-        padding: 5px 0px 0px 5px;
-    }
-
-    .header-element:hover {
-        text-decoration: underline;
     }
 
     .div-center {
@@ -146,7 +155,6 @@
     }
 
     /* Images */
-
     .leaf {
         height: 14px;
         margin-right: 6px;
